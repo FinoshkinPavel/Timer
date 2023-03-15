@@ -1,0 +1,24 @@
+@mixin flex($flDr, $alIt,$juCont){
+  display: flex;
+  flex-direction: $flDr;
+  align-items: $alIt;
+  justify-content: $juCont;
+}
+
+@mixin text ($fw, $fs){
+  font-weight: $fw;
+  font-size: $fs;
+}
+
+
+$maxWidth: 1860;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+  @media (min-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}

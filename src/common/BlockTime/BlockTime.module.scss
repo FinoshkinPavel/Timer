@@ -1,0 +1,15 @@
+@import "../../sass/mixin";
+@import "../../sass/variable";
+.blockTime{
+    color: cornflowerblue;
+    @include flex(column, center, center);
+
+.num{
+    @include text(normal,60px);
+    color: $textColor1;
+}
+.time{
+    @include text(lighter, 38px);
+    color: $textColor1;
+}
+}

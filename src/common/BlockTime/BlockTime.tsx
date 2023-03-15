@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./BlockTime.module.css";
+import s from "./BlockTime.module.scss";
 
 type BlockTimeProps = {
   num: number;
@@ -9,8 +9,8 @@ type BlockTimeProps = {
 export const BlockTime: React.FC<BlockTimeProps> = ({ num, time }) => {
   return (
     <div className={s.blockTime}>
-      <div>{num}</div>
-      <div>{time}</div>
+      <div className={s.num}>{num}</div>
+      <div className={s.time}>{time.toUpperCase()}</div>
     </div>
   );
 };

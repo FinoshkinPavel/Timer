@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Timer.module.css";
+import s from "./Timer.module.scss";
 import { BlockTime } from "../../common/BlockTime/BlockTime";
 
 export const Timer = () => {

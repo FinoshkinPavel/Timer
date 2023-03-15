@@ -1,0 +1,9 @@
+@import "../../sass/mixin";
+@import "../../sass/variable";
+
+.timer {
+  width: 50%;
+  height: 20%;
+  @include flex(row, center, space-evenly)
+
+}
