@@ -5,7 +5,7 @@ import { Timer } from "./features/Timer/Timer";
 function App() {
   return (
     <div className={s.App}>
-      <span className={s.title}>COUNTDOWN:</span>
+      <span className={s.title}>COUNTDOWN FOR NEW YEAR:</span>
       <Timer />
     </div>
   );

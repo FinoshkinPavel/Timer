@@ -2,7 +2,7 @@ import React from "react";
 import s from "./BlockTime.module.scss";
 
 type BlockTimeProps = {
-  num: number;
+  num: string;
   time: string;
 };
 
